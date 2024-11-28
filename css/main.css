@@ -2,17 +2,19 @@
 
 :root {
     /*Colors*/
-    --co-primary-moderate-violet: hsl(263, 55%, 52%);
-    --co-primary-light-pink: hsl(283, 64%, 86%, 100%);
-    --co-primary-light-pink-70: hsl(283, 64%, 86%, 70%);
-    --co-primary-light-pink-50: hsl(283, 64%, 86%, 50%);
-    --co-primary-very-dark-grayish-blue-50: hsl(217, 19%, 35%);
-    --co-primary-very-dark-blackish-blue: hsl(219, 29%, 14%);
-    --co-primary-white: hsl(0, 0%, 100%);
+    --co-primary-01-moderate-violet: hsl(263, 55%, 52%);
+    --co-primary-02-light-pink: hsl(283, 64%, 86%, 100%);
+    --co-primary-03-light-pink-70: hsl(283, 64%, 86%, 70%);
+    --co-primary-04-light-pink-50: hsl(283, 64%, 86%, 50%);
+    --co-primary-05-very-dark-grayish-blue-50: hsl(217, 19%, 35%);
+    --co-primary-06-very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --co-primary-07-white: hsl(0, 0%, 100%);
 
 
-    --co-neutral-light-gray: hsl(0, 0%, 81%);
-    --co-neutral-light-grayish-blue: hsl(210, 46%, 95%);
+    --co-neutral-08-light-gray: hsl(0, 0%, 81%);
+    --co-neutral-09-light-grayish-blue: hsl(210, 46%, 95%);
+
+    --co-secondary-10-gray: hsl(207, 4%, 53%, 100%);
 
     /*Fonts*/
     --ff-Barlow-Semi-Condensed: "Barlow Semi Condensed", sans-serif;
@@ -37,7 +39,8 @@ html, body {
 html,
 body,
 h2,
-p {
+p,
+blockquote {
     margin: 0;
     padding: 0;
 }
@@ -47,36 +50,42 @@ html {
 }
 
 body {
-    background-color: var(--co-neutral-light-grayish-blue);
+    background-color: var(--co-neutral-09-light-grayish-blue);
     font-family: var(--ff-Barlow-Semi-Condensed);
     font-weight: var(--fw-regular);
     font-size: var(--fs-13);
-    color: var(--co-primary-very-dark-grayish-blue);
+    color: var(--co-primary-05-very-dark-grayish-blue-50);
+}
+
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+    margin-top: 7rem;
 }
 
 .card {
     border-radius: .8rem;
-    margin: 7.2rem 2.4rem 2.4rem 2.4rem;
+    margin: 0 2.4rem 0 2.4rem;
     padding: 2.4rem 3.3rem 3.3rem 3rem;
 }
 
-.card--violet{
-    background-color: var(--co-primary-moderate-violet);
+.card--bkg-01-violet{
+    background-color: var(--co-primary-01-moderate-violet);
     color: var(--co-primary-white);
 }
 
-.card--dark-grayish-blue-50 {
-    background-color: var(--co-primary-very-dark-grayish-blue-50);
-    color: var(--co-primary-white);
+.card--bkg-05-grayish-blue {
+    background-color: var(--co-primary-05-very-dark-grayish-blue-50);
+    color: var(--co-primary-07-white);
 }
-.card--dark-blackish-blue {
-    background-color: var(--co-primary-very-dark-blackish-blue);
-    color: var(--co-primary-white);
+.card--bkg-06-blackish-blue {
+    background-color: var(--co-primary-06-very-dark-blackish-blue);
+    color: var(--co-primary-07-white);
 }
-
-.card--white {
-    background-color: var(--co-primary-white);
-    color: var(--co-primary-very-dark-grayish-blue-50);
+.card--bkg-07-white {
+    background-color: var(--co-primary-07-white);
+    color: var(--co-primary-05-very-dark-grayish-blue-50);
 }
 
 header {
@@ -89,12 +98,12 @@ header img {
     height: 3.2rem;
     margin-right: 1.5rem;
     border-radius: 50%;
-    border: 2px solid var(--co-primary-light-pink);
+    border: 2px solid var(--co-primary-02-light-pink);
     display: block;
     float: left;
 }
 
-header p {
+header p, blockquote {
     line-height: 1.5rem;
 }
 
@@ -106,42 +115,89 @@ header p {
     background-repeat: no-repeat;
     display: inline-block;
     position: absolute;
-    fill: var(--co-primary-light-pink-70);
+    fill: var(--co-primary-03-light-pink-70);
     right: 5rem;
-    top: 7.5rem;
+    top: 7.5rem; /*7.5rem*/
 }
 
 .card-header__person-name strong {
     font-size: 1.3;
     font-weight: var(--fw-semi-bold);
-    color: var(--co-primary-light-pink);
+    color: var(--co-primary-02-light-pink);
 }
 
 .card-header__graduation {
     margin-bottom: 1.7rem;
     font-size: 1.1rem;
-    color: var(--co-primary-light-pink-50);
-    font-weight: var(--fw-semi-bold);
+    color: var(--co-primary-04-light-pink-50);
+    font-weight: var(--fw-regular);
 }
 
 .card-header__title {
     padding-right: 0.9rem;
     position: relative;
+    color: var(--co-primary-07-white);
 }
 
 .card__content {
     padding-right: 1.5rem;
     line-height: 1.4;
     font-size: var(--fs-13);
-    color: var(--co-primary-light-pink-70);
 }
 
+.card--bkg-01-violet > .card__content{
+    color: var(--co-primary-03-light-pink-70);
+}
 
+.card--bkg-05-grayish-blue img {
+    border: 1px solid var(--co-neutral-08-light-gray)
+}
 
+.card--bkg-05-grayish-blue .card-header__person-name strong{
+    color: var(--co-primary-07-white);
+}
 
+.card--bkg-05-grayish-blue .card-header__graduation,
+.card--bkg-05-grayish-blue .card__content {
+    color: var(--co-neutral-08-light-gray);
+}
 
+.card--bkg-07-white .card-header__person-name strong{
+    color: var(--co-primary-06-very-dark-blackish-blue);
+}
+
+.card--bkg-07-white .card-header__graduation {
+    color: var(--co-primary-05-very-dark-grayish-blue-50);
+}
+
+.card--bkg-07-white .card-header__title {
+    color: var(--co-primary-06-very-dark-blackish-blue);
+}
+
+.card--bkg-06-blackish-blue .card-header__person-name strong,
+.card--bkg-06-blackish-blue .card-header__graduation {
+    color: var(--co-primary-07-white);
+}
+
+.card--bkg-06-blackish-blue .card-header__graduation {
+    color: var(--co-neutral-08-light-gray);
+}
+
+.card--bkg-06-blackish-blue .card__content {
+    font-weight: var(--fw-regular);
+    color: var(--co-neutral-08-light-gray);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 /*
- .attribution { font-size: 11px; text-align: center; }
+ .attribution {  }
     .attribution a { color: hsl(228, 45%, 44%); }
 
 */
