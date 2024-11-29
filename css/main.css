@@ -217,7 +217,7 @@ footer {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        gap: 1rem;
+        gap: 2rem;
         margin-bottom: 1rem;
     }
 
@@ -259,7 +259,6 @@ footer {
     .card--desktop-5 {
         grid-column: 4;
         grid-row: 1 / 3;
-        max-height: 573rem;
     }
 
     .attribution {

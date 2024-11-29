@@ -1,7 +1,5 @@
 # Frontend Mentor - Testimonials grid section solution
-```css
-Work in progress
-```
+
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
@@ -31,21 +29,18 @@ Users should be able to:
 - View the optimal layout for the site depending on their device's screen size
 
 ### Screenshot
+Preview:
+![](./design/desktop-preview.jpg)
 
-![](./screenshot.jpg)
 
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
+My solution:
+![](./solution/testimonials-grid-solution.png)
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Testimonials Grid Repo](https://github.com/lia-oliveira/testimonials-grid-section)
+- Live Site URL: [Testimonials Grid Live Site]()
 
 ## My process
 
@@ -56,59 +51,51 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
+1 - One of the most important lessons I learned from this project was working with measurements based on multiples of 10. I had used this technique before, but I believe I now truly understand how much easier it makes things. It involves setting the HTML font size to a percentage equivalent to ten pixels. From there, 10px = 1rem, so to apply, for example, 13px, you just use 1.3rem. After that, the work flowed much faster, and the results were more precise.
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
-
-To see how you can add code snippets, see below:
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
+html {
+    font-size: 62.5%;
 }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+2 -I learned how to change the color of .svg via CSS.
+```css
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+.card-header__icon[data-icon="quotation"] {
+    ...
+    fill: var(--co-primary-03-light-pink-70);
+    ...
+}
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I need to learn more about shadows and how to name classes using BEM. I think I not only need to work on more projects or watch more tutorials but also to see other people's solutions.
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+The main resources I used were:
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
+- [Origamid's Complete CSS Grid Guide](https://www.origamid.com/projetos/css-grid-layout-guia-completo/) - It helps me recall property names and their purposes. It's an excellent quick-reference guide.
+- [Origamid's Complete CSS Flexbox Guide](https://origamid.com/projetos/flexbox-guia-completo/) - For the same reasons I chose the CSS Grid guide.
+- [Cesar Lopes’ blog post on "How to Change SVG Color with CSS"](https://www.cesarlopes.com/site/como-alterar-a-cor-de-um-svg-com-css/) - I learned how to change SVG colors via CSS.
+- [CSS Tricks’ Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) - Also great for quick references and solving specific CSS Grid doubts.
+- [CSS Grid Layout da Mozila](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout) - I’m reading it to improve my understanding of Grid and to do better in future projects.
+
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Gillian Oliveira](https://github.com/lia-oliveira)
+- Frontend Mentor - [@lia-oliveira](https://www.frontendmentor.io/profile/lia-oliveira)
+- X - [@byliaoliveira](https://x.com/byliaoliveira) 🚧
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thank you to my colleagues [@AdrianoEscarabote](https://www.frontendmentor.io/profile/AdrianoEscarabote), [@R3ygoski](https://www.frontendmentor.io/profile/R3ygoski), and [@damigand](https://www.frontendmentor.io/profile/damigand) for the time spent analyzing and contributing to the improvement of the Four card feature section solution. Your valuable insights have made this project better than it would have been originally.
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
