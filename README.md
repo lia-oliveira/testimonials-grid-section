@@ -40,7 +40,7 @@ My solution:
 ### Links
 
 - Solution URL: [Testimonials Grid Repo](https://github.com/lia-oliveira/testimonials-grid-section)
-- Live Site URL: [Testimonials Grid Live Site]()
+- Live Site URL: [Testimonials Grid Live Solution](https://testimonials-grid-section-eight-inky.vercel.app/)
 
 ## My process
 
